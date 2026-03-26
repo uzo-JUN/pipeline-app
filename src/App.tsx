@@ -71,7 +71,7 @@ const AuthModal = ({ type, onClose }: { type: 'signin' | 'signup'; onClose: () =
           <div>
             <div className="flex items-center justify-between mb-1.5">
               <label className="text-xs font-semibold text-gray-700 block">Password</label>
-              {isSignIn && <a href="#" className="text-xs text-[#FF5C00] font-semibold hover:underline">Forgot password?</a>}
+              {isSignIn && <button type="button" className="text-xs text-[#FF5C00] font-semibold hover:underline">Forgot password?</button>}
             </div>
             <input type="password" placeholder="••••••••" className="w-full px-4 py-2.5 rounded-xl border border-gray-200 text-sm outline-none focus:border-[#FF5C00] focus:ring-2 focus:ring-orange-100 transition-all" />
           </div>
@@ -176,7 +176,6 @@ const Navbar = () => {
 
 // ─── Dashboard Preview ────────────────────────────────────────────────────────
 const DashboardPreview = () => {
-  const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
   const bars = [
     { completed: 55, progress: 35 },
     { completed: 80, progress: 50 },
